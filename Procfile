@@ -1,1 +1,1 @@
-web: first-app-go
+web: first-go-app
