@@ -4,8 +4,8 @@ test app for deployment
 #Steps
 
 SSH into the machine <br/>
-dokku apps:create /<app-name/> <br/>
+dokku apps:create //<app-name//> <br/>
 
-On local machine in the app folder<br>/
+On local machine in the app folder<br/>
 git remote add dokku dokku@<my-IP>:<app-name> <br/>
 git push dokku master
