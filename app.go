@@ -1,6 +1,9 @@
 package main
 
-import "net/http"
+import (
+	"net/http"
+	"os"
+)
 
 func fn(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Hello User!"))
@@ -8,5 +11,5 @@ func fn(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", fn)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
