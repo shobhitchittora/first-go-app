@@ -15,7 +15,7 @@ On local machine in the app folder<br/>
 
 > web: < app-folder-name>
 
-#Configure persisten storage (can use vagrant)
+#Configure persisten storage 
 
 > dokku docker-options:add < app-name > run "-v /home/storage:/app/images" </br>
 > dokku docker-options:add < app-name > deploy " -v /home/storage:/app/images"
